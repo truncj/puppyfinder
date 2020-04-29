@@ -47,8 +47,8 @@ while 1:
                         print(f'*** New Animal Found *** - {pf_name}')
                         send_message(pf_name, message)
 
-            count += 1
-            time.sleep(init['timeout'])
+        count += 1
+        time.sleep(init['timeout'])
     except requests.exceptions.HTTPError as errh:
         print("HTTP Error:", errh)
     except requests.exceptions.ConnectionError as errc:
