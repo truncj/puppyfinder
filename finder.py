@@ -24,7 +24,7 @@ while 1:
 
         if res.status_code != 200:
             print(f'Error on request: {res.status_code} - {res.text}')
-            authenticate()
+            headers = authenticate()
         else:
             results_json = json.loads(res.text)
             animals = results_json['animals']
