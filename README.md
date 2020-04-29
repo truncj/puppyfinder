@@ -29,7 +29,7 @@ Get emailed when a new pet meets your [Petfinder](https://www.petfinder.com) sea
 }
 ```
 
-## creds.json
+### creds.json
 
 ```json
 {
