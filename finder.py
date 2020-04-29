@@ -23,6 +23,7 @@ while 1:
         res = requests.request('GET', search_url, headers=headers, params=params)
 
         if res.status_code != 200:
+            print(f'Error on request: {res.status_code} - {res.text}')
             authenticate()
         else:
             results_json = json.loads(res.text)
