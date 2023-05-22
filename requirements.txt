@@ -1,2 +1,2 @@
 deepdiff==4.3.2
-requests==2.23.0
+requests==2.31.0
